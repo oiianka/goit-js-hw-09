@@ -16,3 +16,13 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.timer {
+  display: flex;
+}
+
+.field {
+  color: darkorchid;
+  font-size: 18px;
+  margin: 10px 15px;
+}

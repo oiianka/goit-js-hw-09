@@ -6,6 +6,8 @@ import "flatpickr/dist/flatpickr.min.css";
 
 // const flatpickr = require("flatpickr");
 
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
+
 const startBtn = document.querySelector('[data-start]');
 const daysTimer = document.querySelector('[data-days]');
 const hoursTimer = document.querySelector('[data-hours]');
@@ -35,7 +37,9 @@ const options = {
     
       }
       else {
-        window.alert("Please choose a date in the future")
+        // window.alert("Please choose a date in the future")
+        
+Notify.failure('Please choose a date in the future');
       }
     },
   };
